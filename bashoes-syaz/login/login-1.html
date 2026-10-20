@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYAZZ | Admin Control Center</title>
+    <!-- Google Fonts: Bebas Neue (Display) & Inter (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="login-container">
+        
+        <!-- BAGIAN KIRI: Branding & Visual -->
+        <div class="left-panel">
+            <div class="diagonal-bg"></div>
+            <div class="big-bg-text">SYAZZ</div>
+            
+            <div class="left-content">
+                <div class="brand-header">
+                    <div class="logo-mark"></div>
+                    <span class="logo-text">SYAZZ</span>
+                </div>
+                
+                <div class="admin-label">SYAZZ-LOGIN</div>
+                
+                <h1 class="hero-title">
+                    WELCOME<br>BACK.
+                </h1>
+                
+                <p class="hero-subtitle">
+                    Masuk untuk melanjutkan pengalaman belanja Syazz. Jika Anda belum memiliki akun, silakan daftar terlebih dahulu.
+                </p>
+
+                <div class="accent-line"></div>
+            </div>
+
+            <!-- Elemen dekoratif abstrak (siluet sneaker/garis) -->
+            <div class="abstract-shape shape-1"></div>
+            <div class="abstract-shape shape-2"></div>
+        </div>
+
+        <!-- BAGIAN KANAN: Form Login -->
+        <div class="right-panel">
+            <div class="form-wrapper">
+                     <span class="back-home"><a href="../project/index.html">→</a></span>
+                           
+                <div class="form-header">
+                    <h2 class="form-title">LOGIN</h2>
+                    <p class="form-subtitle">Log in to access your Great account <br></p>
+                    <p class="pass-tittle">Use this ↓ </p>
+                               <p class="form-login">LOGIN: admin@syazz.com -<br>PASSWORD: admin123</p>             
+                  
+                </div>
+
+                <form id="loginForm" novalidate>
+                    
+                    <!-- Input Email/Username -->
+                    <div class="input-group">
+                        <label for="email" class="input-label">Email / Username</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            </span>
+                            <input type="text" id="email" name="email" placeholder="Enter your email" autocomplete="username" required>
+                        </div>
+                        <span class="error-message" id="emailError">Email / Username tidak boleh kosong.</span>
+                    </div>
+
+                    <!-- Input Password -->
+                    <div class="input-group">
+                        <label for="password" class="input-label">Password</label>
+                        <div class="input-wrapper">
+                            <span class="input-icon">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            </span>
+                            <input type="password" id="password" name="password" placeholder="Enter your password" autocomplete="current-password" required>
+                            <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">
+                                <svg id="eyeIcon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+                            </button>
+                        </div>
+                        <span class="error-message" id="passwordError">Password tidak boleh kosong.</span>
+                    </div>
+
+                    <!-- Options: Remember Me & Forgot Password -->
+                    <div class="form-options">
+                        <label class="checkbox-container">
+                            <input type="checkbox" id="rememberMe">
+                            <span class="checkmark"></span>
+                            <span class="checkbox-label">Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-link">Forgot password?</a>
+                    </div>
+
+                    <!-- Tombol Submit -->
+                    <button type="submit" class="btn-login" id="loginBtn">
+                        <span class="btn-text">LOGIN →</span>
+                        <span class="btn-loader" id="btnLoader"></span>
+                    </button>
+
+                    <!-- Footer Form -->
+                    <div class="form-footer">
+                        <span class="protected-text">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg>
+                            Your information is protected and secure.
+                        </span>
+                        <span class="signin-link">Belom punya Aku? <a href="../Sign-up/sign.html">SIGN IN</a></span>
+    
+                    </div>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
